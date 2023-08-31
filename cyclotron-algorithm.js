@@ -28,14 +28,14 @@ function accelerateElectron(matrix) {
 
 function accelerateProton(matrix) {
   const size = matrix.length;
-  
+
   // Top border
   matrix[0].fill(PARTICLE.PROTON);
-  
+
   for (let i = 1; i < size; i++) {
     matrix[i][0] = PARTICLE.PROTON; // Left border
   }
-  
+
   // Bottom row until penultimate
   for (let i = 1; i < size - 1; i++) {
     matrix[size - 1][i] = PARTICLE.PROTON;
@@ -57,8 +57,8 @@ function accelerateNeutron(matrix) {
 
 function cyclotron(particle, size) {
   const matrix = createCyclotron(size);
-  
-  switch(particle) {
+
+  switch (particle) {
     case PARTICLE.ELECTRON:
       accelerateElectron(matrix);
       break;
@@ -71,7 +71,7 @@ function cyclotron(particle, size) {
     default:
       break;
   }
-  
+
   printCyclotron(matrix);
 }
 
