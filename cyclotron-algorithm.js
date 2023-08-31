@@ -87,3 +87,6 @@ cyclotron(PARTICLE.NEUTRON, 4);
 
 console.log("\nAccelerating a proton (6x6):");
 cyclotron(PARTICLE.PROTON, 6);
+
+console.log("\nAccelerating a electron (6x6):");
+cyclotron(PARTICLE.ELECTRON, 6);
