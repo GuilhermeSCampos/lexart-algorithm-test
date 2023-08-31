@@ -75,7 +75,7 @@ function cyclotron(particle, size) {
   printCyclotron(matrix);
 }
 
-// Test
+
 console.log("Accelerating an electron:");
 cyclotron(PARTICLE.ELECTRON, 4);
 
@@ -90,3 +90,4 @@ cyclotron(PARTICLE.PROTON, 6);
 
 console.log("\nAccelerating a electron (6x6):");
 cyclotron(PARTICLE.ELECTRON, 6);
+
