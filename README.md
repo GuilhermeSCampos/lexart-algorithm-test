@@ -28,7 +28,9 @@ const { cyclotron } = require('./path_to_module');
 
 const matrixSize = 4; // 4x4 matrix
 
-cyclotron('e', matrixSize); // Simulates electron movement in the cyclotron
+cyclotron('e', 6); // Simulates electron movement in the cyclotron (6x6)
+
+cyclotron('p', 7); // Simulates proton movement in the cyclotron(7x7)
 
 ```
 
